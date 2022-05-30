@@ -1,0 +1,73 @@
+*pm.txt* Minimal project manager form Vim/Neovim.
+
+vim-pm                                                                *vim-pm*
+
+==============================================================================
+CONTENTS                                                     *vim-pm-contents*
+
+    INTRODUCTION.........................|vim-pm-introduction|
+    USAGE................................|vim-pm-usage|
+    COMMANDS.............................|vim-pm-commands|
+    AUTOCMDS.............................|vim-pm-autocmds|
+    LICENSE..............................|vim-pm-license|
+
+
+==============================================================================
+INTRODUCTION                                             *vim-pm-introduction*
+
+vim-pm is a simple and minimal project and session manager for Vim/Neovim.
+
+
+==============================================================================
+USAGE                                                           *vim-pm-usage*
+
+Enter a project, open some files, etc. Then use `:ProjectSave!` to save the
+layout to `.vim/session.vim`.
+
+Reopen the project with `:ProjectOpen` <Tab>. Use `:ProjectSave` (without a `!`)
+to save the current project before quitting.
+
+The list of projects is saved to `$HOME/.vimprojects` (Vim)
+or `stdpath('data') . '/projects.txt'` (Neovim).
+
+
+==============================================================================
+COMMANDS                                                     *vim-pm-commands*
+
+:ProjectOpen {path}                                               |:ProjectOpen|
+
+    Open an existing project.
+
+:ProjectSave[!]                                                   |:ProjectSave|
+
+    Save the currently opened project.
+
+:ProjectQuit[!]                                                   |:ProjectQuit|
+
+    Save the currently opened project and quit.
+
+:ProjectList                                                    |:ProjectList|
+
+    List existing projects.
+
+:ProjectPrevious                                            |:ProjectPrevious|
+
+    Open most recently used project.
+
+
+==============================================================================
+AUTOCMDS                                                     *vim-pm-autocmds*
+
+ProjectOpen                                                      *ProjectOpen*
+
+    Just after opening a project.
+
+
+==============================================================================
+LICENCE                                                       *vim-pm-license*
+
+This plugin is licensed under the MIT license.
+
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:
