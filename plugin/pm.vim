@@ -1,4 +1,4 @@
-" File: project.vim
+" File: pm.vim
 " Description: functions, commands and mappings for managing projects.
 
 if has('nvim')
@@ -98,11 +98,3 @@ command! -bang ProjectSave call s:SaveProject(<bang>0)
 command! -bang ProjectQuit call s:SaveProject(<bang>0) | qa!
 command! ProjectList call s:ListProjects()
 command! ProjectPrevious call s:OpenPreviousProject()
-
-nnoremap <Leader>po :ProjectOpen<Space>
-nnoremap <silent><Leader>ps :ProjectSave<CR>
-nnoremap <silent><Leader>pS :ProjectSave!<CR>
-nnoremap <silent><Leader>pq :ProjectQuit<CR>
-nnoremap <silent><Leader>pl :ProjectList<CR>
-nnoremap <silent><Leader>pl :ProjectList<CR>
-nnoremap <silent><Leader>pp :ProjectPrevious<CR>
