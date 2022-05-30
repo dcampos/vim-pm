@@ -34,15 +34,15 @@ or `stdpath('data') . '/projects.txt'` (Neovim).
 ==============================================================================
 COMMANDS                                                     *vim-pm-commands*
 
-:ProjectOpen {path}                                               |:ProjectOpen|
+:ProjectOpen {path}                                             |:ProjectOpen|
 
     Open an existing project.
 
-:ProjectSave[!]                                                   |:ProjectSave|
+:ProjectSave[!]                                                 |:ProjectSave|
 
     Save the currently opened project.
 
-:ProjectQuit[!]                                                   |:ProjectQuit|
+:ProjectQuit[!]                                                 |:ProjectQuit|
 
     Save the currently opened project and quit.
 
