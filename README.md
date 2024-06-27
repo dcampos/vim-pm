@@ -1,6 +1,6 @@
 # vim-pm
 
-A simple and minimal project manager for Vim/Neovim.
+A simple and minimal project and session manager for Vim/Neovim. Only 100 lines of code.
 
 ## Overview
 
