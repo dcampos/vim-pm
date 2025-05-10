@@ -79,6 +79,10 @@ function! s:ListProjects() abort
     endif
 endfunction
 
+function! s:EditProjects(mods) abort
+    execute a:mods 'split' s:project_file
+endfunction
+
 function! s:OpenPreviousProject() abort
     let project_list = s:ReadProjectList()
     if len(project_list) > 0
@@ -98,3 +102,4 @@ command! -bang ProjectSave call s:SaveProject(<bang>0)
 command! -bang ProjectQuit call s:SaveProject(<bang>0) | qa!
 command! ProjectList call s:ListProjects()
 command! ProjectPrevious call s:OpenPreviousProject()
+command! ProjectEdit call s:EditProjects(<q-mods>)
