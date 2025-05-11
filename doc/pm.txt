@@ -15,7 +15,7 @@ CONTENTS                                                     *vim-pm-contents*
 ==============================================================================
 INTRODUCTION                                             *vim-pm-introduction*
 
-vim-pm is a simple and minimal project and session manager for Vim/Neovim.
+nvim-pm is a simple and minimal project and session manager for Neovim.
 
 
 ==============================================================================
